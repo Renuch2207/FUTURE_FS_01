@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renuka Chintalla</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #4a00e0, #8e2de2);
+      color: #fff;
+      transition: background 0.5s, color 0.5s;
+    }
+    nav {
+      background: rgba(0,0,0,0.3);
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      background: #ffcc00;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section {
+      background: #fff;
+      color: #000;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 900px;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    .skills {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .skills div {
+      width: 45%;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .projects p {
+      margin-bottom: 20px;
+    }
+    .contact a {
+      color: #4a00e0;
+      text-decoration: none;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #4a00e0;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    /* Dark mode styles */
+    .dark-mode {
+      background: #121212;
+      color: #eee;
+    }
+    .dark-mode section {
+      background: #1e1e1e;
+      color: #eee;
+    }
+    .dark-mode nav a {
+      color: #ffcc00;
+    }
+    .dark-mode .contact a {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+    <button onclick="toggleDarkMode()" style="margin-left:20px; padding:5px 10px; border:none; border-radius:5px; cursor:pointer;">🌙 Toggle Dark Mode</button>
+  </nav>
+
+  <div class="hero" id="home">
+    <h1>Renuka Chintalla</h1>
+    <h2>Aspiring Software Developer</h2>
+    <button onclick="document.getElementById('contact').scrollIntoView()">Contact Me</button>
+  </div>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>I am a second-year B.Tech Information Technology student at GVPCEW with a strong interest in programming and software development. I am looking for opportunities to enhance my technical skills and gain practical experience.</p>
+  </section>
+
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="skills">
+      <div>
+        <h4>Technical Skills</h4>
+        <ul>
+          <li>Python</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>SQL & DBMS</li>
+          <li>Pandas, Matplotlib</li>
+          <li>HTML (Basics)</li>
+          <li>Power BI, Excel</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Soft Skills</h4>
+        <ul>
+          <li>Problem-solving & Analytical Thinking</li>
+          <li>Team Collaboration</li>
+          <li>Time Management & Adaptability</li>
+          <li>Communication & Presentation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="projects">
+      <p><strong>TripMate App (2025)</strong><br>
+      Built a smart travel planning application as part of Smart India Hackathon. Contributed to UI design and itinerary planning features.</p>
+
+      <p><strong>Healthcare Database System (2026)</strong><br>
+      Developed a database system to manage patients, doctors, and appointments. Improved structured storage and retrieval of healthcare records.</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h3>Certifications</h3>
+    <ul>
+      <li>Data Processing and Visualization</li>
+      <li>Node.js</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:renukachintalla362@gmail.com">renukachintalla362@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Renuch2207">github.com/Renuch2207</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/chintalla-renuka-002a63330">LinkedIn Profile</a></p>
+
+    <h4>Send me a message</h4>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
